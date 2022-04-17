@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getData } from '../src/api'
 import Lottie from "react-lottie";
 import centerImage from "../src/youbike.json";
+import Map from "./components/Map/Map"
 
 
 export default function App() {
@@ -20,7 +21,6 @@ export default function App() {
     },
   };
 
-
   return (
     <>
       <div>hello,React</div>
@@ -32,6 +32,8 @@ export default function App() {
         height={110}
         width={200}
       />
+      <Map />
+
     </>
   )
 }
